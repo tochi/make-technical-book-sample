@@ -1,0 +1,29 @@
+{
+  "name": "make-technical-book",
+  "version": "1.0.0",
+  "description": "技術本を書く技術の登壇内容です。",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint": "./node_modules/.bin/textlint chapters/*"
+  },
+  "keywords": [],
+  "author": "Tomoyuki TOchihira",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "textlint": "^10.2.1",
+    "textlint-rule-no-mix-dearu-desumasu": "^3.0.3",
+    "textlint-rule-preset-japanese": "^4.0.0",
+    "textlint-rule-prh": "^5.0.1",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.{md}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "dependencies": {}
+}
