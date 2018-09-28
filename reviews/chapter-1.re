@@ -10,3 +10,9 @@
 
 @<href>{https://connpass.com/event/98976/,9/29 岡山城（Y8 in 城） - connpass}
 
+
+
+//image[aguuu-com][aguuu.com]{
+//}
+
+
